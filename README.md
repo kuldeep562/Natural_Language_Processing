@@ -1,104 +1,91 @@
-# 🧠 NLP Task Repository
+# NLP Practical Assignment II – 2024
 
-This repository serves as a central hub for various Natural Language Processing (NLP) assignments, experiments, and projects. It includes practical tasks focused on core NLP techniques and tools using Python and popular libraries like NLTK and Scikit-learn.
+This repository contains implementations of ten practical Natural Language Processing (NLP) tasks as part of the assignment for the Department of Computer Science, Gujarat University.
 
----
+## 📁 Repository Structure
 
-## 📚 Included Work
-
-### 🔹 Practical Assignment – I – 2024 (Branch: `assignment-i-2024`)
-
-| Task No. | Topic                              | Description                                                                 |
-|----------|------------------------------------|-----------------------------------------------------------------------------|
-| 1        | Text Preprocessing                 | Tokenization, stopword removal, stemming, and lemmatization                |
-| 2        | POS Tagging                        | Part-of-speech tagging using NLTK and evaluation with the Penn Treebank    |
-| 3        | Named Entity Recognition (NER)     | Entity detection using spaCy with CoNLL-2003 dataset                       |
-| 4        | Ambiguity Analysis                 | Lexical, syntactic, and semantic ambiguities using Brown Corpus            |
-| 5        | Sentiment Analysis                 | ML-based sentiment model on IMDB movie reviews                             |
-| 6        | Text Classification                | News article classification using 20 Newsgroups dataset                    |
-| 7        | Language Modeling                  | N-gram language model evaluated with WikiText-2                            |
-| 8        | Machine Translation                | English-to-French translation using seq2seq model on WMT14                 |
-| 9        | Text Generation                    | RNN-based text generator trained on literary data from Project Gutenberg   |
-| 10       | Rule-Based Chatbot                 | Simple chatbot with predefined rules and dialogue corpus                   |
-
-➡️ See branch: [`assignment-i-2024`](https://github.com/yourusername/nlp-task/tree/assignment-i-2024)
-
----
-
-### 🔹 Practical Assignment – II – 2024 (Branch: `assignment-ii-2024`)
-
-| Task No. | Topic                          | Description                                                                 |
-|----------|--------------------------------|-----------------------------------------------------------------------------|
-| 1        | Tokenization                   | Sentence and word tokenizer using Reuters-21578 dataset                     |
-| 2        | Stemming                       | Porter Stemmer applied on Brown Corpus                                     |
-| 3        | Lemmatization                  | WordNet lemmatizer with comparison to stemming using Gutenberg Corpus       |
-| 4        | Bag of Words (BoW)             | Convert documents into numerical vectors using 20 Newsgroups dataset        |
-| 5        | TF-IDF                         | Feature extraction from IMDB Movie Reviews                                  |
-| 6        | Morphological Analysis         | Root form detection using Universal Dependencies                            |
-| 7        | Regex Pattern Extraction       | Extract dates, emails, etc. from Enron Email Dataset                        |
-| 8        | Levenshtein Edit Distance      | Compare word pairs using edit distance (WordNet or custom dataset)          |
-| 9        | Preprocessing Pipeline         | Includes tokenization, normalization, and vectorization (Amazon Reviews)    |
-| 10       | Spell Checker                  | Suggest spelling corrections using edit distance and Birkbeck corpus        |
-
-➡️ See branch: [`assignment-ii-2024`](https://github.com/yourusername/nlp-task/tree/assignment-ii-2024)
-
----
-
-## 🚀 Getting Started
-
-### Clone the Repo
-```bash
-git clone https://github.com/yourusername/nlp-task.git
-cd nlp-task
+```
+nlp-practical-assignment-ii-2024/
+│
+├── LICENSE
+├── README.md
+├── requirements.txt
+├── datasets/
+│   └── README.md
+│
+├── task_01_tokenizer/
+├── task_02_stemming/
+├── task_03_lemmatizer/
+├── task_04_bow/
+├── task_05_tfidf/
+├── task_06_morphological_analyzer/
+├── task_07_regex_patterns/
+├── task_08_edit_distance/
+├── task_09_preprocessing_pipeline/
+└── task_10_spell_checker/
 ```
 
-### View Specific Work
-Switch to the relevant branch:
-```bash
-git checkout assignment-i-2024
-# or
-git checkout assignment-ii-2024
-```
+Each `task_xx_*` folder contains the Python implementation of the corresponding NLP task.
 
----
+## ✅ Task Descriptions
 
-## 🛠 Tech Stack
+1. **Tokenizer**  
+   Split a text into sentences and words.  
+   Dataset: [Reuters-21578](https://archive.ics.uci.edu/ml/datasets/reuters-21578+text+categorization+collection)
 
-- Python 3.8+
-- NLTK
-- spaCy
-- Scikit-learn
-- Pandas & NumPy
-- TensorFlow / PyTorch (as required)
-- Hugging Face Transformers (optional)
+2. **Stemming**  
+   Apply the Porter Stemming algorithm.  
+   Dataset: [Brown Corpus](https://www.nltk.org/nltk_data/)
 
----
+3. **Lemmatizer**  
+   Use WordNet lemmatizer and compare with stemming.  
+   Dataset: [Gutenberg Corpus](https://www.nltk.org/nltk_data/)
 
-## 📦 Dataset Sources
+4. **Bag of Words (BoW)**  
+   Convert documents into numerical vectors.  
+   Dataset: [20 Newsgroups](http://qwone.com/~jason/20Newsgroups/)
 
-- NLTK corpora: https://www.nltk.org/nltk_data/
-- IMDB reviews: https://ai.stanford.edu/~amaas/data/sentiment/
-- 20 Newsgroups: http://qwone.com/~jason/20Newsgroups/
-- CoNLL-2003: https://www.clips.uantwerpen.be/conll2003/ner/
-- WikiText-2: https://blog.einstein.ai/the-wikitext-long-term-dependency-language-modeling-dataset/
-- WMT14: http://www.statmt.org/wmt14/translation-task.html
-- Project Gutenberg: https://www.gutenberg.org/
-- Cornell Movie Dialogues: https://www.cs.cornell.edu/~cristian/Cornell_Movie-Dialogs_Corpus.html
+5. **TF-IDF**  
+   Extract important text features using TF-IDF.  
+   Dataset: [IMDB Movie Reviews](https://ai.stanford.edu/~amaas/data/sentiment/)
 
----
+6. **Morphological Analyzer**  
+   Identify root forms and morphological features.  
+   Dataset: [Universal Dependencies](https://universaldependencies.org/)
 
-## 🙌 Acknowledgements
+7. **Regex Pattern Extraction**  
+   Extract emails, dates, etc., using regular expressions.  
+   Dataset: [Enron Email Dataset](https://www.cs.cmu.edu/~enron/)
 
-Datasets and tools used from:
-- NLTK
-- Stanford AI
-- UCI ML Repository
-- Hugging Face Datasets
-- Kaggle
-- Universal Dependencies
+8. **Levenshtein Edit Distance**  
+   Compare pairs of words using edit distance.  
+   Dataset: [WordNet](https://wordnet.princeton.edu/) or custom dataset.
 
----
+9. **Text Preprocessing Pipeline**  
+   Includes tokenization, normalization, and vectorization.  
+   Dataset: [Amazon Reviews](https://registry.opendata.aws/amazon-reviews/)
 
-## 📝 License
+10. **Spell Checker**  
+    Suggest corrections using edit distance.  
+    Dataset: [Birkbeck Spelling Error Corpus](http://ota.ox.ac.uk/desc/2464)
 
-This project is licensed under the [Apache 2.0 License](./LICENSE).
+## 📦 Setup Instructions
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/nlp-practical-assignment-ii-2024.git
+   cd nlp-practical-assignment-ii-2024
+   ```
+
+2. Create a virtual environment and install dependencies:
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # or venv\Scripts\activate on Windows
+   pip install -r requirements.txt
+   ```
+
+3. Run individual task scripts located inside `task_xx_*` folders.
+
+## 📄 License
+
+See [LICENSE](LICENSE) for license details.
