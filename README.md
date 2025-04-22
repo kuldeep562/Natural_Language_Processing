@@ -44,6 +44,16 @@ This repository serves as a central hub for various Natural Language Processing 
 
 ---
 
+### 🔹 Learning Task Folder (Recent Addition)
+
+A new folder titled `Learning Task` has been added to the repository. It currently includes:
+- 📝 `Natural Language Preprocessing.ipynb` – A notebook demonstrating core text preprocessing techniques
+- 🧪 `Small Task.ipynb` – A mini NLP task or experiment (details inside notebook)
+
+This section will grow as more ad-hoc or exploratory tasks are added.
+
+---
+
 ## 🚀 Getting Started
 
 ### Clone the Repo
