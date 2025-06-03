@@ -106,9 +106,3 @@ Datasets and tools used from:
 - Hugging Face Datasets
 - Kaggle
 - Universal Dependencies
-
----
-
-## 📝 License
-
-This project is licensed under the [Apache 2.0 License](./LICENSE).
