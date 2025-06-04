@@ -31,9 +31,6 @@ This repository contains the implementation of 10 practical tasks assigned as pa
 9. **Text Generation**  
    RNN-based text generator trained on literary works from Project Gutenberg.
 
-10. **Rule-Based Chatbot**  
-   A basic chatbot that responds to user queries using predefined rules and optionally the Cornell Movie Dialogues Corpus.
-
 ## 🗂️ Repository Structure
 
 ```
@@ -47,7 +44,6 @@ nlp-practical-assignments/
 ├── task_07_language_model/
 ├── task_08_machine_translation/
 ├── task_09_text_generation/
-├── task_10_chatbot/
 ├── datasets/
 │   └── README.md
 ├── LICENSE
